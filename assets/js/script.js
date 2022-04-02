@@ -92,7 +92,7 @@ var quizQuestions = [
 	correctAnswer: 'd'
 },
 {
-	question: "How does a WHILE loop start?", 
+	question: "How does a WHILE loop start?", ``
 	answers: { 
 		a: 'while i = 1 to 10',
 		b: 'while (i <= 10; i++)',
