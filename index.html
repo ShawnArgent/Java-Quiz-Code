@@ -9,10 +9,64 @@
     <title>JS Quiz</title>
 
 </head>
+
 <body>
+    <header>   
+
+        <a id=leaderboard> View Highscores</a> 
+        <time> Time: <span id="time"></span></time>
     
-    
-    <script src="./assets/js/quiz.js"></script>
+    </header>
+
+    <main>
+        <div id="start-card" class="card">
+            <h2 id=title>JavaScript Quiz Game</h2>
+            <ul>
+                <li>Answer the following JavaScript questions within the time limit.</li>
+                <li>Lose 5 seconds for each incorrect answer!</li>
+                <li>Time Left = Total Score</li>
+            </ul>
+
+            <button id=start-button class="button">Start Quiz</button>
+        </div>
+        <div hidden id="question-card class="card>
+            <h2 id=question-text></h2>
+
+            <div id=quiz-choices>
+                <button id=choice0 class="button choice-button"></button>
+                <button id=choice1 class="button choice-button"></button>
+                <button id=choice2 class="button choice-button"></button>
+                <button id=choice3 class="button choice-button"></button>
+        </div>
+        <div id=result-div>
+            <hr>
+            <p>id=result-text></p>
+        </div>
+    </div>
+
+    <div hidden id=score-card class="card">
+        <h2>Game Over!</h2>
+        <p>Final Score <span id=score></span>.</p>
+        <form class="inline-form" id="submisison-form">
+            <label for="initials">Enter initials: </label>
+            <input type="text" id="initials">
+            <button id="submit-button" class="button">Submit</button>
+        </form>
+    </div>
+
+    <div hidden id=leaderboard-card class="card">
+        <h2>Highscores</h2>
+        <ol id="highscore-list">
+        </ol>
+        <div class="inline-buttons">
+            <button id="back-button"class="button"></button>
+            <button id="clear-button" class="button"></button>
+        </div>
+    </div>
+
+    </main>
+
+        <script src="./assets/js/quiz.js"></script>
 </body>
 
 </html>
