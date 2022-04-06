@@ -1,21 +1,22 @@
-:root {
-    --white: #ffffff;
-    --dark: #6d0863;
-}
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: var(--white);
+    background-color: #ffffff;
     margin: 0px;
 }
 
 header {
     display: flex; 
     justify-content: space-between;
-    background-color: var(--dark);
-    color: var(--white);
-    padding: 24px 
+    background-color: #6d0863;
+    color: #ffffff;
+    padding: 3vh 
 }
+
+time {
+    min-width: 85px;
+}
+
 main {
     display: flex;
     align-items: center;
@@ -23,9 +24,77 @@ main {
 }
 .button {
     display: block;
-    color: var(--white);
-    padding: 16px;
-    border-radius: 2px;
+    color: #ffffff;
+    background-color: #6d0863;
+    padding: 2vh;
+    border-radius: 5px;
     border: none;
-
 }
+.inline-buttons {
+display: inline-flex;
+}
+.card {
+    max-width: 80%;
+    margin-top: 15vh;
+    border: none;
+    border-width: 2px;
+    padding: 5vw;
+    border-radius: 20px;
+    border-color: lightgray;
+    box-shadow: 10px 5px 10px 10px lightgray; 
+}
+
+#start-screen {
+    display: inline-flex;
+    text-align: center;
+}
+
+
+.choice-button {
+    width: 100%;
+    text-align: left;
+    margin: 5px;
+}
+
+#result-div {
+    display: none;
+}
+
+.inline-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#initials {
+    width: 25%;
+    margin: 8px;
+    padding: 1vh;
+}
+
+#back-button {
+    margin-right: 8px;
+}
+
+.highscore-list {
+    padding-inline-start: 20px;
+}
+
+@media screen and (min-width: 850px) {
+    .card {
+      max-width: 680px;
+    }
+  }
+  
+  /* Media query that specifies devices that can utilize hover */
+  @media (hover) {
+    
+    a:hover {
+      color: #d4c5d4;
+    }
+  
+    button:hover {
+      background-color: rgba(214, 168, 214, 0.5);
+    }
+  }
+

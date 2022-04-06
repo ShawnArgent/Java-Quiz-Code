@@ -13,8 +13,8 @@
 <body>
     <header>   
 
-        <a id=leaderboard> View Highscores</a> 
-        <time> Time: <span id="time"></span></time>
+        <a id=leaderboard>View Highscores</a> 
+        <time>Time: <span id="time"></span></time>
     
     </header>
 
@@ -23,13 +23,13 @@
             <h2 id=title>JavaScript Quiz Game</h2>
             <ul>
                 <li>Answer the following JavaScript questions within the time limit.</li>
-                <li>Lose 5 seconds for each incorrect answer!</li>
+                <li>Lose seconds for each incorrect answer!</li>
                 <li>Time Left = Total Score</li>
             </ul>
 
             <button id=start-button class="button">Start Quiz</button>
         </div>
-        <div hidden id="question-card class="card>
+        <div hidden id=question-card class="card">
             <h2 id=question-text></h2>
 
             <div id=quiz-choices>
@@ -40,7 +40,7 @@
         </div>
         <div id=result-div>
             <hr>
-            <p>id=result-text></p>
+            <p id=result-text></p>
         </div>
     </div>
 
@@ -59,8 +59,8 @@
         <ol id="highscore-list">
         </ol>
         <div class="inline-buttons">
-            <button id="back-button"class="button"></button>
-            <button id="clear-button" class="button"></button>
+            <button id="back-button" class="button">Start Over</button>
+            <button id="clear-button" class="button">Clear Highscores</button>
         </div>
     </div>
 
